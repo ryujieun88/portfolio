@@ -94,6 +94,7 @@ $('#jieun').fullpage({
     slidesNavigation : true,
     keyboardScrolling : true,
     responsiveWidth: 1000,
+    normalScrollElements: ".item",
     afterLoad: function(anchorLink, index){
         console.log('현재 영역의 번호는' + index)
         if(index==6){
@@ -101,5 +102,30 @@ $('#jieun').fullpage({
         }
     }
 })
+
+$(function(){
+    $('.gallery-collection .private').click(function(){
+    $('.popup').show()
+     $('.popup .item').hide()
+ 
+     let idx = $(this).index() //클릭한 애 번호
+     // console.log(idx)
+     $('.popup .item').eq(idx).show()
+    })
+    $('.popup').click(function(){
+        $(this).hide()
+    })
+    $('.gallery-collection .team').click(function(){
+     $('.popup1').show()
+     $('.popup1 .item').hide()
+ 
+     let idx = $(this).index() //클릭한 애 번호
+     // console.log(idx)
+     $('.popup1 .item').eq(idx).show()
+    })
+    $('.popup1').click(function(){
+        $(this).hide()
+    })
+ })
 
 

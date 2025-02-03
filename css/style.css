@@ -24,7 +24,7 @@ ul {
 header {
     position: fixed;
     width: 100%;
-    z-index: 9;
+    z-index: 999;
     top: 0; left: 0;
     padding: 0 2rem;
 
@@ -212,7 +212,6 @@ section:nth-child(5) {
     flex-direction: row;
     justify-content: space-around;
     padding: 50px;
-    /* margin: 150px 400px; */
 }
 
 .innermid img {
@@ -220,15 +219,23 @@ section:nth-child(5) {
     border-radius: 200px;
 }
 
+.innermid .mid3 img {
+    border: 1px solid black;
+    
+}
+
+.iconzone img {
+    margin: 10px;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 30px;
+}
+
 .innermid .content p {
-    /* letter-spacing: 10px; */
     line-height: 45px;
-    /* text-align: left; */
     margin-top: 20px;
 }
 
 .innermid .mid2 p, .mid3 p {
-    /* font-family: ; */
     line-height: 45px;
 }
 
