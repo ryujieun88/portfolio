@@ -85,25 +85,25 @@ for(let i = 0; i<scrollMove.length; i++){
 }
 
 
-$('#jieun').fullpage({
-    anchors: ['page1','page2','page3','page4','page5'],
-    sectionsColor: ['','','#ccc','#ddd','#eee'],
-    navigation : true,
-    navigationPosition : 'right',
-    navigationTooltips : ['Main','About','Portfolio(개인)','Portfolio(팀)','Contact'],
-    slidesNavigation : true,
-    keyboardScrolling : true,
-    responsiveWidth: 1000,
-    normalScrollElements: ".item",
-    afterLoad: function(anchorLink, index){
-        console.log('현재 영역의 번호는' + index)
-        if(index==6){
-            alert('마지막 입니다')
-        }
-    }
-})
 
 $(function(){
+    $('#jieun').fullpage({
+        anchors: ['page1','page2','page3','page4','page5'],
+        sectionsColor: ['','','#ccc','#ddd','#eee'],
+        navigation : true,
+        navigationPosition : 'right',
+        navigationTooltips : ['Main','About','Portfolio(개인)','Portfolio(팀)','Contact'],
+        slidesNavigation : true,
+        keyboardScrolling : true,
+        responsiveWidth: 1000,
+        normalScrollElements: ".item",
+        afterLoad: function(anchorLink, index){
+            console.log('현재 영역의 번호는' + index)
+            if(index==6){
+                alert('마지막 입니다')
+            }
+        }
+    })
     $('.gallery-collection .private').click(function(){
     $('.popup').show()
      $('.popup .item').hide()
