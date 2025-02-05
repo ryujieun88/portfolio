@@ -3,7 +3,7 @@
 (function(){
     //텍스트 작성
     const spanEl = document.querySelector('main h2 .introduce')
-    const txtarr = ['Jieun','Web Deisigner']
+    const txtarr = ['Jieun','Web Designer']
     console.log(txtarr)
     let index = 0; 
     let currentTxt = txtarr[index].split('')
